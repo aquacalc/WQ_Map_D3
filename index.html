@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Test WQ Map in D3</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Tooltip styling -->
+    <link rel="stylesheet" href="css/tip.css">
+    <link rel="stylesheet" href="css/CarbCalc.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/Carnaval_aquarium_Saint_Saëns.jpg"></a>
+        </div>
+    </nav>
+
+    <div class='container'>
+
+      <div class='row'>
+        <div class='col-md-3'>
+          <div class='row'>
+            <!-- <div class='col-mid-12'> -->
+            <label for="temperature">Temperature: </label>
+            <input type="number" name="temperature" id="temperature" value="30">
+            <!-- </div> -->
+          </div>
+          <div class='row'>
+            <label for="salinity">Salinity: </label>
+            <input type="number" name="salinity" id="salinity" value="35">
+          </div>
+          <div class='row'>
+            <label for="ph">pH: </label>
+            <input type="number" name="ph" id="ph" value="7">
+          </div>
+          <div class='row'>
+            <h3>Slope: <span id='answer2'></span></h3>
+          </div>
+          <div class='row'>
+            <h3>Intercept: <span id='answer1'></span></h3>
+          </div>
+          <div class='row'>
+            <label for="alk_at_dic">DIC </label>
+            <input type="number" name="alk_at_dic" id="alk_at_dic" value="5">mg/kg = <span id='answer3'> -- </span> meq/kg
+          </div>
+          <div class='row'>
+            <button id='btn-calc' class='btn-primary' type="button" name="button">Calculate</button>
+          </div>
+        </div>
+
+        <div class='col-md-9'>
+          <div class="row">
+              <div class="col-md-12">
+                  <div id="chart-area"></div>
+              </div>
+          </div>
+        </div>
+
+      </div> <!-- END ROW-of-ROW -->
+
+    </div> <!-- END CONTAINER -->
+
+    <script src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/CarbCalc.js"></script> -->
+    <!-- <script type="text/javascript" src="js/LineChart_WQ.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script src='js/d3-tip.js'></script> -->
+  </body>
+
+</html>

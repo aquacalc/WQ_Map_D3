@@ -1,0 +1,26 @@
+html {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#logo {
+  height: 30px;
+}
+
+input {
+  width: 60px;
+  text-align: right;
+}
+
+/* from: https://bl.ocks.org/mbostock/1087001 */
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 12px;
+  padding: 8px;
+  margin-top: -20px;
+  font: 10px sans-serif;
+  background: #ddd;
+  pointer-events: none;
+}
